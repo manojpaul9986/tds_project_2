@@ -53,18 +53,7 @@ The dataset consists of 2363 records with various columns representing indicator
     - Range: 0.083 - 0.705
     - Mean: 0.273; implies lower levels of negative feelings overall compared to positive affect.
 
-### Visualizations
-The following charts provide further insight into the distribution and relations of various variables:
-1. ![Year](year.png)
-2. ![Life Ladder](Life Ladder.png)
-3. ![Log GDP per capita](Log GDP per capita.png)
-4. ![Social Support](Social support.png)
-5. ![Healthy Life Expectancy](Healthy life expectancy at birth.png)
-6. ![Freedom of Choices](Freedom to make life choices.png)
-7. ![Generosity](Generosity.png)
-8. ![Perceptions of Corruption](Perceptions of corruption.png)
-9. ![Positive Affect](Positive affect.png)
-10. ![Negative Affect](Negative affect.png)
+
 
 ### Insights Discovered
 - **Trends Over Time**: The Life Ladder indicates general improvement in life satisfaction over recent years, suggesting socioeconomic development or enhanced well-being.

@@ -1,3 +1,14 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#   "httpx",
+#   "pandas",
+#   "matplotlib",
+#   "requests",
+#   "python-dotenv",
+# ]
+# ///
+
 import pandas as pd
 import sys
 import requests

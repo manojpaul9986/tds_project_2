@@ -135,6 +135,20 @@ def check_binnability_with_function(column_stats):
         return None
 
 
+#Executing Generated Code and Handling Errors
+
+def execute_llm_code(code):
+    try:
+        exec(code, globals())
+        print("Code executed successfully.")
+        return True
+    except Exception as e:
+        error_line = traceback.extract_tb(e.__traceback__)[-1].lineno
+        error_message = f"Error: {e}\nLine: {error_line}\nCode: {code}"
+        print(error_message)
+        return error_message
+
+
 #Iterating Over Columns and Determining Binnability
 
 results = []
@@ -198,18 +212,7 @@ for column_name, column_data in binnable_columns_data.items():
         else:
             print(f"Error generating chart for {column_name}")
 
-#Executing Generated Code and Handling Errors
 
-def execute_llm_code(code):
-    try:
-        exec(code, globals())
-        print("Code executed successfully.")
-        return True
-    except Exception as e:
-        error_line = traceback.extract_tb(e.__traceback__)[-1].lineno
-        error_message = f"Error: {e}\nLine: {error_line}\nCode: {code}"
-        print(error_message)
-        return error_message
 
 #Report Generation 
 
